@@ -13,7 +13,6 @@ import { RouterModule } from '@angular/router';
     providers: [],
     exports: [
       LayoutModule,
-      RouterModule
     ]
   })
   export class CoreModule { }

@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
     Angular Starter
-    <div style="margin-right: 20px">
+    <div style="margin-right: 20px" fxLayout="row">
         <button mat-button [routerLink]="'/dashboard'">
             Dashboard
         </button>
@@ -10,5 +10,11 @@
             >
             User
         </button>
+        <button mat-button (click)="toggleFlag()">
+            Toggle flag
+        </button>
+        <div fxLayoutAlign="end end">
+            Flag set to {{$exampleFlag | async}}
+        </div>
     </div>
 </mat-toolbar>

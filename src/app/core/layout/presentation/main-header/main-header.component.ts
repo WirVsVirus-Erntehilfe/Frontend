@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppStateFacade } from 'src/app/store/app-state.facade';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-main-header',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainHeaderComponent implements OnInit {
 
-  constructor() { }
+  $exampleFlag: Observable<boolean> = this._appStateFacade.getExampleFlag();
+
+  constructor(private _appStateFacade: AppStateFacade) { }
 
   ngOnInit() {
+  }
+
+  toggleFlag(): void {
+    this._appStateFacade.toggleExampleFlag();
   }
 
 }
