@@ -1,12 +1,14 @@
 <mat-toolbar color="primary">
+    Angular Starter
     <div style="margin-right: 20px">
-        <button mat-button>
-            test1
+        <button mat-button [routerLink]="'/dashboard'">
+            Dashboard
         </button>
         <button 
             mat-button
-            (click)="toggleSelected(button)">
-            test2
+            [routerLink]="'/user'"
+            >
+            User
         </button>
     </div>
 </mat-toolbar>

@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { submoduleRoutes } from './submodules/submodule.routing';
 
-
-const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(submoduleRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
