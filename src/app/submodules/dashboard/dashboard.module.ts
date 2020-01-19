@@ -28,4 +28,4 @@ const routes: Routes = [
         DashboardFacade
     ]
 })
-export class DashboardModule { }
+export class DashboardModule {}
