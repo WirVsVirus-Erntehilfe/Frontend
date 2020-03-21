@@ -1,4 +1,4 @@
-
+@import "variables";
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
@@ -12,8 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$AngularStarter-primary: mat-palette($mat-indigo);
-$AngularStarter-accent: mat-palette($mat-pink, A200, A100, A400);
+$AngularStarter-primary: mat-palette($mat-green);
+$AngularStarter-accent: mat-palette($mat-brown, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $AngularStarter-warn: mat-palette($mat-red);
@@ -28,5 +28,24 @@ $AngularStarter-theme: mat-light-theme($AngularStarter-primary, $AngularStarter-
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+    height: 100%;
+    overflow: hidden
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    @include body-1;
+    color: $primary_background;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: $primary_background;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}

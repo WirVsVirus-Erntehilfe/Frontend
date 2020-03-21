@@ -1,0 +1,103 @@
+$dark-theme: true !default;
+
+$white: #ffffff !default;
+$black: #000000 !default;
+$primary_background: #000000 !default;
+$primary-900: #212121 !default;
+$primary-800: #424242 !default;
+$primary-700: #616161 !default;
+$primary-600: #757575 !default;
+$primary-500: #9e9e9e !default;
+$secondary: #0091ff !default;
+$error: #e02020 !default;
+$idle: #6236ff !default;
+$info: #f7b500 !default;
+$success: #6dd400 !default;
+$warning: #fa6400 !default;
+
+$base: 16px; // As this is the default rem value
+$padding-s: $base * 0.5;
+$padding-m: $base;
+$padding-b: $base * 1.5;
+$nav-height: $base * 4;
+
+
+@mixin h1 {
+    font-weight: 300;
+    font-size: 6rem;
+    letter-spacing: -0.09375rem;
+}
+
+@mixin h2 {
+    font-weight: 300;
+    font-size: 3.75rem;
+    letter-spacing: 0.03125rem;
+}
+
+@mixin h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 0rem;
+}
+
+@mixin h4 {
+    font-weight: 400;
+    font-size: 2.125rem;
+    letter-spacing: 0.015625rem;
+}
+
+@mixin h5 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0rem;
+}
+
+@mixin h6 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 0.009375rem;
+}
+
+@mixin subtitle-1 {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.009375rem;
+}
+
+@mixin subtitle-2 {
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0.00625rem;
+}
+
+@mixin body-1 {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.03125rem;
+}
+
+@mixin body-2 {
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.015625rem;
+}
+
+@mixin button {
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0.078125rem;
+    text-transform: uppercase;
+}
+
+@mixin caption {
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.025rem;
+}
+
+@mixin overline {
+    font-weight: 400;
+    font-size: 0.625rem;
+    letter-spacing: 0.9375rem;
+    text-transform: uppercase;
+}
